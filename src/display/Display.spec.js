@@ -2,6 +2,11 @@ import React from "react";
 import Display from "./Display"
 import { render } from "react-testing-library";
 
+
+test('Display renders correctly', () => {
+  render(<Display />);
+});
+
 test('unlocked and open', () => {
     const { getByText } = render(<Display locked={false} closed={false}/>);
     const unlocked = getByText(/unlocked/i);

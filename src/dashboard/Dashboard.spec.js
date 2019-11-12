@@ -3,7 +3,7 @@ import * as rtl from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 import Dashboard from "./Dashboard"
 import Display from "../display/Display"
-import Controls from "../controls/Controls"
+
 import { render } from "react-testing-library";
 
 
@@ -19,9 +19,7 @@ test('Dashboard renders correctly', () => {
     render(<Dashboard />);
   });
 
-test('Display renders correctly', () => {
-    render(<Display />);
-  });
+
 
 test('contains open display', () => {
     const { getByText } = render(<Dashboard />);    
