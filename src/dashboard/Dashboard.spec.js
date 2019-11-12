@@ -20,11 +20,8 @@ test('Dashboard renders correctly', () => {
   });
 
 test('Display renders correctly', () => {
-
     render(<Display />);
   });
-
-
 
 test('contains open display', () => {
     const { getByText } = render(<Dashboard />);    

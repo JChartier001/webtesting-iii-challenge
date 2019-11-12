@@ -2,13 +2,9 @@ import React from "react"
 import Controls from "./Controls"
 import { render, fireEvent } from "@testing-library/react";
 
-
-
-
 test('Controls renders correctly', () => {
     render(<Controls />);  
 })
-
 
 test('closed is called', () => {
   const toggleClosed = jest.fn();
@@ -20,7 +16,6 @@ fireEvent.click(getByText(/Close gate/i));
   expect(toggleClosed).toHaveBeenCalled();
   expect(toggleClosed).toHaveBeenCalledTimes(1);
 });
-
 
 test('unlocked and open', () => {
     const closeSpy = jest.fn();
